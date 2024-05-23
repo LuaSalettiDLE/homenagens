@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "URW Chancery L", cursive ;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 45.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #f789ff;
+    border-radius: 5rem;
+}
+
+body{
+    background-color: #010002;
+}
+
+section{
+    padding:20px 7%;
+}
+
+span {
+    color: #c153ea;
+}
+
+.btn{
+    width: 40%;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 17px;
+    color:black;
+    border-radius: 40px;
+    background: #8b1dd4;
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .20px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px 7%;
+    border-bottom: .10px solid #D699B5;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    margin:0 10px;
+    font-size: 16px;
+    color:#ffffff;
+}
+
+.header .navbar a:hover{
+    color: #c153ea;
+    border-bottom: .10px solid #c153ea;
+    padding-bottom: .50px;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.inicio{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(../img/fundopag1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio .conteudo{
+    max-width: 700px;
+}
+
+.inicio .conteudo h2{
+    font-size: 80px;
+    text-transform: uppercase;
+    color:#a31de6;
+}
+
+.inicio .conteudo p{
+    font-style: initial;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:10px 0;
+    color:#eee;
+}
+
+.sobre{
+    min-height: 80vh;
+    background: linear-gradient(-60deg, #d41d9d, #df38df, #db74c5, #D699B5, #ffffff);
+    background-size: 600% 600%;
+    animation: Animacao 90s ease infinite;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sobre .sobre1 {
+    max-width: 100px;
+}
+
+.sobre .sobre1 h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.sobre .imagem{
+    width: 500px;
+}
+
+.sobre .imagem img{
+    box-shadow: 9px 15px 10px rgba(50, 50, 50, 0.77);
+    border-radius: 30px;
+    margin-left: 600px;
+    width: 100%;
+}
+
+.como{
+    min-height: 80vh;
+    background-color: #8b1dd4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.como1 {
+    margin-left: 300px;
+}
+
+.como .como1 {
+    max-width: 1000px;
+}
+
+.como .imagem2 img{
+    box-shadow: 9px 15px 10px rgba(0, 0, 0, 0.77);
+    border-radius: 30px;
+    width: 400px;
+}
+
+.como .como1 h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.como .como1 p {
+    font-size: 20px;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:white;
+}
+
+/* FIM CARDS  */
+
+.cards{
+    background-color: #f789ff;
+    text-align: center;
+    padding: 5%;
+}
+
+.cards h1 {
+    color: white;
+    font-size: 100px;
+    margin-bottom: 100px;
+}
+
+.servicos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.card img {
+    width: 100px;
+    height: 87px;
+}
+
+.card {
+    background-color: white;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 60px;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 9px 15px 10px rgba(50, 50, 50, 0.77);
+    flex-direction: column;
+}
+
+.card p {
+    padding-top: 10px;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.content {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.contato{
+    min-height: 80vh;
+    background:url(../img/fundoluana3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contato .contato1 {
+    max-width: 500px;
+}
+
+.contato .contato1 h3 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.contato .contato1 .div_p {
+    font-size: 20px;
+    flex-direction: row;
+    text-align: center;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:white;
+}
+
+.maps {
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+}
+
+.area1, .area2, .area3, .area4 .btn {
+    visibility: hidden;
+}
+
+@keyframes Animacao {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
